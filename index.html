@@ -1,74 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P&L CONSULTANT LTD - Building Rwanda’s Future</title>
-    <link rel="stylesheet" href="styling.css">
+  <!-- Meta Information -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P&L CONSULTANT LTD — Building Rwanda’s Future</title>
+  <meta name="description" content="P&L CONSULTANT LTD — Construction, civil engineering, land services and technical consultancy based in Remera, Kigali">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="src/styling.css">
+
+  <!-- Added favicon link -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your public key
+    (function() {
+      emailjs.init("VC51Mh9D_3V-kk7MS"); // Replace with your actual EmailJS public key
+    })();
+  </script>
+
+  <!-- JavaScript -->
+  <script src="src/script.js" defer></script>
+
+  <style>
+    body {
+      background-image : url('assets/logo/company_logo.png'); /* Replace with the new background image */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="#">
-                <img src="" alt="logo">
-            </a>
+  <!-- Header Section -->
+  <header>
+    <div class="container header-inner">
+      <!-- Logo and Branding -->
+      <div class="logo">
+        <a href="index.html" aria-label="P&L Consultant homepage">
+          <img src="assets/logo/company_logo.png" alt="P&L Consultant logo">
+        </a>
+        <div>
+          <div class="brand">P&L CONSULTANT LTD</div>
+          <div class="location">Remera, Gasabo — Kigali</div>
         </div>
-        <div class="nav-urls">
-            <a href="#about-company">About Company</a>
-            <a href="#about-eng-eric">About Eng. Eric</a>
-            <a href="#expertise">Expertise</a>
-            <a href="#request">Request Service</a>
-            <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav aria-label="Main navigation">
+        <a class="nav-link" href="#homepage">Home</a>
+        <a class="nav-link" href="#expertise">Expertise</a>
+        <a class="nav-link" href="#special-offers">Offers</a>
+        <a class="nav-link" href="#request">Request Service</a>
+        <a class="nav-link" href="pages/houses.html">Houses</a>
+        <a class="nav-link" href="pages/land-plots.html">Land Plots</a>
+        <a class="nav-link" href="pages/projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero" id="homepage">
+      <div class="hero-card hero-grid">
+        <div>
+          <h1>We build, advise, and deliver infrastructure that lasts.</h1>
+          <p class="lead">
+            Since 2012, <strong>P&L CONSULTANT LTD</strong> offers end-to-end construction, civil engineering, and land services in Rwanda — from feasibility and design to site supervision and delivery.
+          </p>
+          <p>
+            <a class="cta" href="#request">Request a Quote</a>
+            <a class="cta secondary" href="#expertise">Our Services</a>
+          </p>
+          <div class="feature-grid">
+            <!-- Feature Cards -->
+            <div class="card">
+              <h3>Residential & Commercial</h3>
+              <p class="lead">Design, construction, and supervision for houses, apartments, and commercial buildings.</p>
+            </div>
+            <div class="card">
+              <h3>Infrastructure & Civil Works</h3>
+              <p class="lead">Roads, drainage, earthworks, and full site preparation — technical expertise you can rely on.</p>
+            </div>
+          </div>
         </div>
-    </header>
+        <!-- Quick Contact Section -->
+        <aside class="card" aria-labelledby="quick-contact">
+          <h3 id="quick-contact">Quick Contact</h3>
+          <div class="contact-card">
+            <div>📍 Remera, Gasabo — Kigali</div>
+            <div>📞 <a href="tel:+250788757391">+250 788 757 391</a></div>
+            <div>✉️ <a href="mailto:plconsultanltltd12@gmail.com">plconsultanltltd12@gmail.com</a></div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-    <main>
-        <section id="about-company">
-            <h1>Welcome to P&L CONSULTANT LTD</h1>
-            <h4>Building Rwanda’s Future, One Project at a Time</h4>
-            <p>Founded in <strong>2012</strong> and based in <strong>Remera, Gasabo – Kigali</strong>, P&L CONSULTANT LTD specializes in <strong>construction, civil engineering, and technical consultancy.</strong></p>
-            <ul>
-                <li>Construction of residential and commercial buildings</li>
-                <li>Civil engineering and infrastructure projects</li>
-                <li>Electrical installations and specialized construction works</li>
-                <li>Architectural, engineering, and related consultancy</li>
-            </ul>
-        </section>
+    <!-- About Section -->
+    <section id="about-company" class="section-grid">
+      <div class="card">
+        <h3>About P&L CONSULTANT LTD</h3>
+        <p class="muted">
+          Founded in 2012, P&L CONSULTANT LTD provides technical consultancy and construction services focused on quality, compliance, and timely delivery.
+        </p>
+        <ul class="clean">
+          <li>Project feasibility and consultancy</li>
+          <li>Architectural & structural studies</li>
+          <li>Construction supervision and quality assurance</li>
+          <li>Electrical & mechanical installations</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Core Values</h3>
+        <ul class="clean">
+          <li>Safety-first execution</li>
+          <li>Transparent pricing</li>
+          <li>Local knowledge, international standards</li>
+          <li>Long-term client relationships</li>
+        </ul>
+      </div>
+    </section>
 
-        <section id="about-eng-eric">
-            <h2>My Story: Led by Experience and Resilience</h2>
-            <p>At the heart of P&L CONSULTANT LTD is Eng. Eric Nzayisenga, our Managing Director and Chairperson. With over 15 years of experience, he has been instrumental in shaping the company’s vision.</p>
-            <ul>
-                <li>Primary education (1987–1999), overcoming challenges caused by the 1994 Genocide against the Tutsi.</li>
-                <li>Secondary school (2000–2006), specializing in construction studies.</li>
-                <li>Advanced Diploma in Civil Engineering (2011–2014) at IPRC Kigali.</li>
-                <li>Bachelor’s Degree in Civil Engineering from Institut Supérieur de Technologies.</li>
-            </ul>
-        </section>
+    <!-- Expertise Section -->
+    <section id="expertise" class="section-grid">
+      <h2>Our Expertise</h2><br><br>
+      <div class="card">
+        <h3>Land Services</h3>
+        <ul class="clean">
+          <li>Measuring & surveying</li>
+          <li>Boundary correction & stakeout</li>
+          <li>Subdivisions & land management</li>
+          <li>Feasibility & advisory</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Construction & Consultancy</h3>
+        <ul class="clean">
+          <li>Architectural and structural studies</li>
+          <li>Quantity takeoffs & building quotations</li>
+          <li>Supervision and site management</li>
+          <li>Electrical & mechanical works</li>
+        </ul>
+      </div>
+    </section>
 
-        <section id="expertise">
-            <h2>Expertise</h2>
-            <h3>Why Choose Us</h3>
-            <p>✅ Over 10 years of expertise in construction and consultancy<br>
-               ✅ Client-focused approach with tailor-made solutions<br>
-               ✅ Strong reputation for reliability, safety, and quality delivery</p>
-        </section>
+    <!-- Special Offers Section -->
+    <section id="special-offers" class="section-grid">
+      <h2>Special Offers</h2><br><br>
+      <div class="offers-grid">
+        <div class="card">
+          <h3>Land Brokerage</h3>
+          <ul class="clean">
+            <li>Plots for sale</li>
+            <li>Houses for sale & rent</li>
+            <li>Apartments for rent</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Feasibility & Advisory</h3>
+          <p class="lead">Feasibility studies to help developers understand cost, timelines and regulatory requirements.</p>
+        </div>
+        <div class="card">
+          <h3>Supply & Procurement</h3>
+          <p class="lead">Supplier sourcing, procurement and delivery of construction materials and equipment.</p>
+        </div>
+      </div>
+    </section>
 
-        <section id="request">
-            <h2>Request a Service</h2>
-            <p>Fill out the form below to request one of our services:</p>
-            <form id="form">
-                <!-- Form fields go here -->
-                 
-            </form>
-        </section>
+    <!-- Request Service Form Section -->
+    <section id="request" class="section-grid">
+      <h2>Request a Service</h2><br><br>
+      <div class="card">
+        <p class="muted">Tell us about your project — we'll respond within 48 business hours.</p>
+        <br><br>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>📍 Remera, Gasabo, Kigali – Rwanda<br>
-               📞 +250 788 757 391<br>
-               ✉️ <a href="mailto:erinza2020@yahoo.fr">erinza2020@yahoo.fr</a></p>
-        </section>
-    </main>
+        <!-- Contact Form -->
+        <form id="contact-form">
+          <div class="form-row">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required placeholder="Jane Doe" required>
+            </div>
+            <div>
+              <label for="company">Company(optional)</label>
+              <input id="company" name="company" type="text" placeholder="Company name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" required placeholder="+250 XXX XXX XXX" required>
+            </div>
+            <div>
+              <label for="upi">UPI</label>
+              <input id="upi" name="upi" type="text" required placeholder="X/XX/XX/XX/XXXX" required>
+            </div>
+          </div>
+          <div>
+            <label for="service">Service interested in</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Construction — Residential</option>
+              <option>Construction — Commercial</option>
+              <option>Land survey & subdivision</option>
+              <option>Feasibility / Advisory</option>
+              <option>Supply & procurement</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Project brief / message</label>
+            <textarea id="message" name="message" placeholder="Short description of your project, site address, timeline, budget (if any)..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="submit" type="submit" onclick="">Send request</button>
+            <div id="form-status"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-grid">
+      <h2>Contact</h2><br><br>
+      <div class="card">
+        <p class="lead muted">For partnerships, tenders or press enquiries:</p>
+        <div class="contact-card">
+          <div>📍 Remera, Gasabo — Kigali</div>
+          <div>📞 <a href="tel:+250788757391">+250 788 757 391</a></div>
+          <div>✉️ <a href="mailto:plconsultanltltd12@gmail.com">plconsultanltltd12@gmail.com</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="dark-footer">
+    <div class="container">
+      <p>© <strong>P&L CONSULTANT LTD</strong> — Building Rwanda’s future • Registered 2012</p>
+      <p>
+        📍 Remera, Gasabo — Kigali | 📞 <a href="tel:+250788757391">+250 788 757 391</a> | ✉️ <a href="mailto:plconsultanltltd12@gmail.com">plconsultanltltd12@gmail.com</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
